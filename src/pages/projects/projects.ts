@@ -2,64 +2,52 @@ import { getRepositoryDetails } from "../../utils";
 
 export interface Project {
   name: string;
-  demoLink: string;
+  repoLink: string;
   tags?: string[],
   description?: string;
   postLink?: string;
-  demoLinkRel?: string;
+  repoLinkRel?: string;
   [key: string]: any;
 }
 
 export const projects: Project[] = [
   {
-    name: 'Devaradise.com',
-    description: 'A blog that sharing web development resources and tutorials',
-    demoLink: 'https://devaradise.com',
-    tags: ['Blog']
+    name: 'Estelle L. - Dev Portfolio',
+    description: 'An Astro dev portfolio and blog to post about my journey as a dev and my projects.',
+    repoLink: 'https://github.com/estellel-github/dev-portfolio',
+    tags: ['Blog', 'Astro']
   },
   {
-    name: 'Sellercraft App',
-    description: 'An Ecommerce omnichannel platform in Southeast Asia',
-    demoLink: 'https://sellercraft.co',
-    demoLinkRel: 'nofollow noopener noreferrer',
-    tags: ['ECommerce', 'Saas']
+    name: 'Movie Club App Backend',
+    description: 'Backend for managing a movie club (capstone project for my full-stack program - work in progress).',
+    repoLink: 'https://github.com/estellel-github/movie-club-app',
+    tags: ['TS', 'Node', 'Express', 'PSQL']
   },
   {
-    name: 'Gaji.id App',
-    description: 'Payroll and HR Management Information System',
-    demoLink: 'https://sellercraft.co',
-    demoLinkRel: 'nofollow noopener noreferrer',
-    tags: ['HRIS', 'Saas']
+    name: 'Node-Express Book App',
+    description: 'A basic RESTful API built with Node.js and Express.',
+    repoLink: 'https://github.com/estellel-github/node-express-basic-app',
+    repoLinkRel: 'nofollow noopener noreferrer',
+    tags: ['Node', 'Express', 'JS']
   },
   {
-    ...(await getRepositoryDetails('devaradise/paradise-ui')),
-    name: 'Paradise UI',
-    demoLink: 'https://paradise-ui.com',
-    postLink: 'https://devaradise.com/how-i-build-paradise-ui-react-component-library/',
-    tags: ['React', 'UI Library']
+    name: 'To Do App',
+    description: 'A To Do app built with JavaScript/TypeScript and Webpack.',
+    repoLink: 'https://github.com/estellel-github/todo-app-webpack',
+    repoLinkRel: 'nofollow noopener noreferrer',
+    tags: ['TS', 'Webpack']
   },
   {
-    ...(await getRepositoryDetails('syakirurahman/react-lab')),
-    name: 'React Lab',
-    demoLink: 'https://devaradise.com/lab/react/',
-    tags: ['React']
+    name: 'Calculator',
+    description: 'A simple and elegant calculator app built using HTML, CSS, and JavaScript.',
+    repoLink: 'https://github.com/estellel-github/calculator',
+    repoLinkRel: 'nofollow noopener noreferrer',
+    tags: ['JS']
   },
   {
-    ...(await getRepositoryDetails('syakirurahman/pokemon-catcher')),
-    name: 'Pokemon Catcher',
-    demoLink: 'https://pokemon-catcher-18636.web.app/',
-    tags: ['Hobby']
-  },
-  {
-    ...(await getRepositoryDetails('syakirurahman/movie-nominations')),
-    name: 'Movie Nominations',
-    demoLink: 'https://movie-nominations-c21c3.web.app/',
-    tags: ['Hobby']
-  },
-  {
-    ...(await getRepositoryDetails('syakirurahman/organization-tree')),
-    name: 'Organization tree',
-    demoLink: 'https://organization-tree-2a446.web.app/',
-    tags: ['Hobby']
+    name: 'Etch-A-Sketch',
+    description: 'A digital Etch-a-Sketch app built with HTML, CSS, and JavaScript.',
+    repoLink: 'https://github.com/estellel-github/etch-a-sketch',
+    tags: ['JS']
   }
 ]

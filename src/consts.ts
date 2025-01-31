@@ -1,6 +1,3 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = 'Devolio';
-export const SITE_TAGLINE = 'Minimalist Starter for Developer Blog & Portfolio Website'; // site tagline
-export const SITE_DESCRIPTION = 'Minimalist Starter for Developer Blog & Portfolio Website'; // site meta description for SEO
+export const SITE_TITLE = 'Estelle L.';
+export const SITE_TAGLINE = 'Full-Stack Dev | Backend Enthusiast | Based in Berlin'; // site tagline
+export const SITE_DESCRIPTION = 'Tech musings, coding adventures, and portfolio projects—all in one place.'; // site meta description for SEO

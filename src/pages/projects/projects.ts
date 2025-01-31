@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Movie Club App Backend',
-    description: 'A backend app for managing a movie club (capstone project for my full-stack program - work in progress).',
+    description: 'A backend app for managing a movie club (capstone full-stack project - in progress).',
     repoLink: 'https://github.com/estellel-github/movie-club-app',
     tags: ['TS', 'Node', 'Express', 'PSQL']
   },
